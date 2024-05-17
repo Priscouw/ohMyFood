@@ -34,16 +34,21 @@
 
 // Liste des liens du footer
 
-.nav_item-bold {
-    font-weight: 500;
+.nav_item {
+    @include weight-size-txt;
 
+    
     @media screen and (min-width:1024px) {
        &:nth-child(2) {
         margin-right: 1.5rem;
     }  
     }
+
+    &--thin {
+        font-weight: 400;
+    }
    
-    i {        
+   i {        
         width: 0.68rem;
          margin-right: 0.9rem;
     }
