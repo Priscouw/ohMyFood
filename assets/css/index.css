@@ -111,6 +111,11 @@ h1, h2 {
 
 h2 {
   padding-bottom: 1rem;
+  padding-left: 5%;
+}
+
+h3 {
+  font-size: 1.1rem;
 }
 
 p {
@@ -156,11 +161,10 @@ p {
   font-size: 1.12rem;
 }
 
-.fonctionnement {
+main section {
   padding: 3rem 0;
-  margin: 0 auto;
-  width: 90%;
 }
+
 .fonctionnement_step_container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,6 +174,8 @@ p {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
+  margin: 0 auto;
+  width: 90%;
 }
 
 .stepcard {
@@ -211,4 +217,54 @@ p {
 .stepcard_title {
   font-weight: 500;
   font-size: 1rem;
+}
+
+.restaurant {
+  background-color: #F6F6F6;
+}
+.restaurant_container {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.restaurant_card {
+  position: relative;
+  background-color: white;
+  border-radius: 1rem;
+}
+.restaurant_card img {
+  width: 100%;
+  height: 175px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.restaurant_card .badge_new {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #99E2D0;
+  color: #008766;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.1rem;
+  font-size: 0.9rem;
+}
+.restaurant_card-txt {
+  padding: 0.5rem 0 1rem 0.5rem;
+}
+.restaurant_card_subtitle {
+  font-size: 1.06rem;
+}
+.restaurant_card_content {
+  position: relative;
+}
+.restaurant_card_content .empty_like {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 15px;
+  right: 20px;
 }/*# sourceMappingURL=index.css.map */
