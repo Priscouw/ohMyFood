@@ -1,0 +1,8 @@
+ .heroheader_btn {
+    @include weight-size-txt;
+    padding: 1rem 1.5rem;  
+    margin: 1rem;  
+    color: white;
+    background: linear-gradient($second-color, $main-color);
+    border-radius : 1.5rem; 
+}
