@@ -111,7 +111,6 @@ h1, h2 {
 
 h2 {
   padding-bottom: 1rem;
-  padding-left: 5%;
 }
 
 h3 {
@@ -162,6 +161,8 @@ p {
 }
 
 main section {
+  max-width: 90%;
+  margin: 0 auto;
   padding: 3rem 0;
 }
 
@@ -174,8 +175,6 @@ main section {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5rem;
-  margin: 0 auto;
-  width: 90%;
 }
 
 .stepcard {
@@ -190,6 +189,9 @@ main section {
 }
 .stepcard_number {
   position: absolute;
+  left: 0%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
   font-size: 0.9rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,8 +202,6 @@ main section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  top: 20px;
-  left: -10px;
   color: white;
   background: #9356DC;
   width: 1.5rem;
@@ -219,12 +219,11 @@ main section {
   font-size: 1rem;
 }
 
-.restaurant {
+.background_section {
   background-color: #F6F6F6;
 }
+
 .restaurant_container {
-  width: 90%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.5rem;

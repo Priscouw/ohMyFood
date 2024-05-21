@@ -18,13 +18,13 @@ $font-family-logo : "Shrikhand", sans-serif;
 @import './_layout/header';
 @import './_layout/footer';
 @import './_components/buttons';
+
 // general
 
 * {
     margin: 0;
     padding: 0;
-    font-family: $font-family-text;
-   
+    font-family: $font-family-text;   
 }
 
 a {
@@ -42,7 +42,7 @@ h1,h2 {
 
 h2 {
     padding-bottom: 1rem ;
-    padding-left: 5%;
+    
 }
 
 h3 {
@@ -52,6 +52,8 @@ h3 {
 p {
     font-weight: 300;
 }
+
+
 
 // heroheader
     //  location
@@ -89,6 +91,8 @@ p {
           
 
 main section {
+    max-width: 90%;
+    margin: 0 auto;
     padding: 3rem 0 ;
 }
 
@@ -101,8 +105,7 @@ main section {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-margin: 0 auto;
-    width: 90%;
+
    }
 }
  
@@ -117,12 +120,13 @@ margin: 0 auto;
              
        &_number {
         position: absolute;
+        left : 0%;
+        transform: translate(-50%);
         font-size: 0.9rem;
         display:flex;
         justify-content:center;
-        align-items: center;          
-        top: 20px;
-        left : -10px;
+        align-items: center;       
+        
         color: white;
         background:$main-color;
         width: 1.5rem;
@@ -144,13 +148,15 @@ margin: 0 auto;
    }
 // section restaurants
 
+.background_section {
+    background-color: $bg-main-color;
+}
+
 .restaurant {
-   background-color: $bg-main-color;
+
 
 
 &_container {
-width: 90%;
-margin: 0 auto;
 display: grid;
 grid-template-columns: 1fr;
 gap: 1.5rem;
