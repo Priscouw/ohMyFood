@@ -148,11 +148,8 @@ li {
   list-style-type: none;
 }
 
-h1, h2 {
-  font-size: 1.5rem;
-}
-
 h2 {
+  font-size: 1.5rem;
   padding-bottom: 1rem;
 }
 
@@ -197,6 +194,20 @@ p {
   padding: 2rem 0;
   background-color: #F6F6F6;
   text-align: center;
+}
+
+.heroheader_title {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .heroheader_title {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .heroheader_title {
+    font-size: 2.5rem;
+  }
 }
 
 .heroheader_subtitle {
