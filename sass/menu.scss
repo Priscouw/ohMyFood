@@ -1,0 +1,22 @@
+// settings
+
+$main-color: #9356DC;
+$second-color:#FF79DA;
+$third-color : #99E2D0;
+$bg-main-color: #F6F6F6;
+$font-family-text : "Roboto", sans-serif;
+$font-family-logo : "Shrikhand", sans-serif;
+
+// mixin
+
+@mixin weight-size-txt {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+// imports
+@import './_layout/header';
+@import './_layout/footer';
+@import './_components/buttons';
+
