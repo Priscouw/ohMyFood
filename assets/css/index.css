@@ -189,6 +189,11 @@ main section {
   margin: 0 auto;
   padding: 3rem 0;
 }
+@media screen and (min-width: 1440px) {
+  main section {
+    max-width: 1080px;
+  }
+}
 
 .fonctionnement_step_container {
   display: -webkit-box;
@@ -248,9 +253,31 @@ main section {
 }
 
 .restaurant_container {
-  display: grid;
-  grid-template-columns: 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .restaurant_container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .restaurant_container a {
+    width: 45%;
+  }
 }
 
 .restaurant_card {
