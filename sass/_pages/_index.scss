@@ -1,129 +1,131 @@
 // heroheader
-    //  location
+//  location
 
-    .heroheader_location {        
-        padding: 1rem;
-        background-color: #EAEAEA;
-        display: flex;
-        justify-content: center;
-                             
-        i {
-            margin-right: 0.7rem;
-        }
+.heroheader_location {
+    padding: 1rem;
+    background-color: #EAEAEA;
+    display: flex;
+    justify-content: center;
 
-        &-txt {
-            @include weight-size-txt;
-        }
+    i {
+        margin-right: 0.7rem;
     }
+
+    &-txt {
+        @include weight-size-txt;
+    }
+}
 
 // heroheader presentation
 
-    .heroheader_content {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        gap: 1rem;      
-        padding: 2rem 0;
-        background-color: $bg-main-color;        
-        text-align: center; 
-        box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25); 
-        
-        @media screen and (min-width:768px) {
+.heroheader_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+    background-color: $bg-main-color;
+    text-align: center;
+    box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+    @media screen and (min-width:768px) {
         box-shadow: none;
         gap: 1.5rem;
-            
-        }
+
+    }
+}
+
+.heroheader_title {
+    font-size: 1.5rem;
+
+    @media screen and (min-width:768px) {
+        font-size: 1.8rem;
     }
 
-    .heroheader_title {
-        font-size: 1.5rem;
- 
-        @media screen and (min-width:768px) {
-           font-size: 1.8rem; 
-        }
-
-        @media screen and (min-width:1440px) {
-            font-size: 2.5rem;
-        }
+    @media screen and (min-width:1440px) {
+        font-size: 2.5rem;
     }
-        .heroheader_subtitle {
-            font-size: 1.12rem;
-        }   
-          
+}
+
+.heroheader_subtitle {
+    font-size: 1.12rem;
+}
+
 
 main section {
     max-width: 90%;
     margin: 0 auto;
-    padding: 3rem 0 ;
+    padding: 3rem 0;
 
     @media screen and (min-width:1440px) {
-        max-width:1080px;
+        max-width: 1080px;
     }
 }
 
 // section fonctionnement
 
 .fonctionnement {
-     
 
-&_step_container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
 
-    @media screen and (min-width:1024px) {
-        flex-direction: row;  
-        gap: 2rem;     
-     }
+    &_step_container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
-   }
+        @media screen and (min-width:1024px) {
+            flex-direction: row;
+            gap: 2rem;
+        }
+
+    }
 }
- 
-.stepcard { 
-    position : relative;
+
+.stepcard {
+    position: relative;
     padding: 1.5rem 2rem;
     display: flex;
     align-items: center;
     background: $bg-main-color ;
     border-radius: 1.2rem;
-     gap: 1rem;
-     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    gap: 1rem;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 
-     @media screen and (min-width:1024px) {
-       width: 33%;
-     }
-     
-             
-       &_number {
+    @media screen and (min-width:1024px) {
+        width: 33%;
+    }
+
+
+    &_number {
         position: absolute;
-        left : 0%;
+        left: 0%;
         transform: translate(-50%);
         font-size: 0.9rem;
-        display:flex;
-        justify-content:center;
-        align-items: center;       
-        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         color: white;
-        background:$main-color;
+        background: $main-color;
         width: 1.5rem;
         height: 1.5rem;
-         border-radius : 2rem;
-       }
-          
-      &_icon  {
-        color:#7E7E7E;
+        border-radius: 2rem;
+    }
+
+    &_icon {
+        color: #7E7E7E;
         font-size: 1.1rem;
 
-         &--purple {
-          color: $main-color;
-          font-size: 1.1rem;
+        &--purple {
+            color: $main-color;
+            font-size: 1.1rem;
         }
-      }
+    }
 
-       &_title {
-       @include weight-size-txt;
-       }
-   }
+    &_title {
+        @include weight-size-txt;
+    }
+}
+
 // section restaurants
 
 .background_section {
@@ -132,27 +134,27 @@ main section {
 
 .restaurant {
 
-&_container {
+    &_container {
 
-display: flex;
-flex-direction: column;
-gap: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
 
 
-@media screen and (min-width:768px) {
-    
-    flex-flow: row wrap;
-    justify-content: space-between;  
-    gap: 3rem; 
-    
-}
+        @media screen and (min-width:768px) {
 
- a {
-    @media screen and (min-width:768px) {
-        width: 45%;
-    }
+            flex-flow: row wrap;
+            justify-content: space-between;
+            gap: 3rem;
+
         }
-}
+
+        a {
+            @media screen and (min-width:768px) {
+                width: 45%;
+            }
+        }
+    }
 
 }
 
@@ -161,8 +163,8 @@ gap: 1.5rem;
     background-color: white;
     border-radius: 1rem;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
-   
-     img {
+
+    img {
         width: 100%;
         height: 175px;
         object-fit: cover;
@@ -170,34 +172,34 @@ gap: 1.5rem;
         border-top-right-radius: 1rem;
     }
 
-.badge_new {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    background: $third-color;
-    color: #008766;
-    padding: 0.3rem 0.6rem;
-    border-radius:0.1rem ;
-    font-size: 0.9rem;
-}
+    .badge_new {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background: $third-color;
+        color: #008766;
+        padding: 0.3rem 0.6rem;
+        border-radius: 0.1rem;
+        font-size: 0.9rem;
+    }
 
-&-txt {
-    padding: 0.5rem 0 1rem 0.5rem;
-}
+    &-txt {
+        padding: 0.5rem 0 1rem 0.5rem;
+    }
 
-&_subtitle {
-    font-size: 1.06rem;
-}
- 
-&_content {
-position: relative;
+    &_subtitle {
+        font-size: 1.06rem;
+    }
+
+    &_content {
+        position: relative;
 
 
-.empty_like {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 15px;
-    right: 20px;
-}
-}
+        .empty_like {
+            font-size: 1.5rem;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+    }
 }
