@@ -14,9 +14,42 @@ $font-family-logo : "Shrikhand", sans-serif;
     font-size: 1rem;
 }
 
-
 // imports
+
+@import './_pages/index';
+@import './_pages/menu';
 @import './_layout/header';
 @import './_layout/footer';
 @import './_components/buttons';
+
+// general
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-family-text;   
+}
+
+a {
+    text-decoration:none;
+    color: inherit;    
+}
+
+
+h2 {
+    font-size: 1.5rem ;  
+    padding-bottom: 1rem ;  
+}
+
+h3 {
+    font-size: 1.1rem;
+    }
+
+p {
+    font-weight: 300;
+}
+
+
+
 
