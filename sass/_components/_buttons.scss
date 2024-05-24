@@ -1,4 +1,4 @@
-// Le after est considéré comme un deuxième bouton qui se superpose sous celui de base, il est transparent mais deviens visible quand on fait un hover sur le bouton
+// Le after est considéré comme un deuxième bouton qui se superpose sous celui de base, il est derrière mais deviens visible quand on fait un hover sur le bouton
 
 .btn {
   @include weight-size-txt;
@@ -10,7 +10,6 @@
   border-radius: 1.5rem;
   box-shadow: 0px 4px 10px 0px #00000040;
   z-index: 1;
-
 
   &:hover {
     &::after {
@@ -25,7 +24,8 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: linear-gradient(lighten($second-color, 5%), lighten($main-color, 5%));
+    background: linear-gradient(lighten($second-color, 5%),
+        lighten($main-color, 5%));
     opacity: 0;
     box-shadow: 0px 4px 15px 0px #00000059;
     z-index: -1;

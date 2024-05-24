@@ -21,6 +21,7 @@
 
 <body>
     <!-- header -->
+
     <header class="header">
         <div class="header_container">
             <a href="../index.html"> <i class="fa-solid fa-arrow-left header_icon"></i></a>
@@ -31,15 +32,19 @@
         <section class="restau">
             <div class="restau_img">
 
-                <img src="../assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de plat">
+                <!-- <img src="../assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de plat"> -->
             </div>
 
             <div class="restau_menu">
                 <div class="restau_txt">
                     <h1 class="restau_title">La palette du goût</h1>
-                    <i class="fa-regular fa-heart empty_like"></i>
+                    <div class="like">
+                        <img class="like_empty" src="../assets/img/icon/empty_heart.svg" alt="icone coeur vide">
+                        <img class="like_full" src="../assets/img/icon/full_heart.svg" alt="icone coeur plein">
+                    </div>
                 </div>
-                <!-- entrees -->
+
+                <!-- Entrees -->
                 <div class="menu">
                     <div class="menu_entree">
                         <h2 class="menu_title">Entrées</h2>
@@ -107,9 +112,8 @@
                     </div>
 
                 </div>
-                <div>
-                    <a class="menu btn" href="#">Commander</a>
-                </div>
+                <a class="menu btn" href="#">Commander</a>
+
             </div>
         </section>
     </main>

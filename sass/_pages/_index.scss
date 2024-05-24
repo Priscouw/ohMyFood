@@ -66,7 +66,6 @@ main section {
 
 .fonctionnement {
 
-
     &_step_container {
         display: flex;
         flex-direction: column;
@@ -76,7 +75,6 @@ main section {
             flex-direction: row;
             gap: 2rem;
         }
-
     }
 }
 
@@ -93,7 +91,6 @@ main section {
     @media screen and (min-width:1024px) {
         width: 33%;
     }
-
 
     &_number {
         position: absolute;
@@ -140,13 +137,11 @@ main section {
         flex-direction: column;
         gap: 1.5rem;
 
-
         @media screen and (min-width:768px) {
 
             flex-flow: row wrap;
             justify-content: space-between;
             gap: 3rem;
-
         }
 
         a {
@@ -155,7 +150,6 @@ main section {
             }
         }
     }
-
 }
 
 .restaurant_card {
@@ -164,7 +158,7 @@ main section {
     border-radius: 1rem;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
 
-    img {
+    &_img {
         width: 100%;
         height: 175px;
         object-fit: cover;
@@ -183,23 +177,23 @@ main section {
         font-size: 0.9rem;
     }
 
+    &_content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
     &-txt {
-        padding: 0.5rem 0 1rem 0.5rem;
+        padding: 0.5rem 0 1rem 1rem;
     }
 
     &_subtitle {
         font-size: 1.06rem;
     }
 
-    &_content {
-        position: relative;
-
-
-        .empty_like {
-            font-size: 1.5rem;
-            position: absolute;
-            top: 15px;
-            right: 20px;
-        }
+    .like {
+        right: 40px;
+        bottom: 17px;
     }
 }
