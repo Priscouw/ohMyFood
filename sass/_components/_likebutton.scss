@@ -1,0 +1,30 @@
+// Le coeur plein est placé au dessus du coeur vide mais n'est pas visible par défault , il apparait au hover du coeur vide. Le coeur vide visible par default devient invisible 
+
+.like {
+    position: relative;
+
+    &_empty,
+    &_full {
+        width: 21px;
+        height: 21px;
+        position: absolute;
+        transition: opacity 250ms ease-in-out;
+    }
+
+    &_empty {
+        opacity: 1;
+        z-index: 1;
+
+        &:hover {
+            opacity: 0;
+
+            &:hover+.like_full {
+                opacity: 1;
+            }
+        }
+    }
+
+    &_full {
+        opacity: 0;
+    }
+}
