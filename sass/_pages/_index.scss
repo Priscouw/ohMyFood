@@ -23,7 +23,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    padding: 2rem 0;
+    padding: 2rem 1rem;
     background-color: $bg-main-color;
     text-align: center;
     box-shadow: inset 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -52,7 +52,9 @@
 }
 
 
-main section {
+// section fonctionnement
+
+.fonctionnement {
     max-width: 90%;
     margin: 0 auto;
     padding: 3rem 0;
@@ -60,11 +62,6 @@ main section {
     @media screen and (min-width:1440px) {
         max-width: 1080px;
     }
-}
-
-// section fonctionnement
-
-.fonctionnement {
 
     &_step_container {
         display: flex;
@@ -130,6 +127,14 @@ main section {
 }
 
 .restaurant {
+
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 3rem 0;
+
+    @media screen and (min-width:1440px) {
+        max-width: 1080px;
+    }
 
     &_container {
 
