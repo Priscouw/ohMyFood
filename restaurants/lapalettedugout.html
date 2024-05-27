@@ -16,105 +16,118 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
 </head>
 
 <body>
     <!-- header -->
 
     <header class="header">
-        <div class="header_container">
-            <a href="../index.html"> <i class="fa-solid fa-arrow-left header_icon"></i></a>
-            <img class="header_logo" src="../assets/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
-        </div>
+        <a href="../index.html"> <i class="fa-solid fa-arrow-left header_icon"></i></a>
+        <img class="header_logo" src="../assets/img/logo/ohmyfood@2x.svg" alt="logo ohmyfood">
     </header>
     <main>
-        <section class="restau">
-            <div class="restau_img">
 
-                <!-- <img src="../assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de plat"> -->
+        <div class="restau_img">
+            <img src="../assets/img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo de plat">
+        </div>
+
+        <section class="restau">
+            <div class="restau_txt">
+                <h1 class="restau_txt-title">La palette du goût</h1>
+                <div class="like">
+                    <img class="like_empty" src="../assets/img/icon/empty_heart.svg" alt="icone coeur vide">
+                    <img class="like_full" src="../assets/img/icon/full_heart.svg" alt="icone coeur plein">
+                </div>
             </div>
 
-            <div class="restau_menu">
-                <div class="restau_txt">
-                    <h1 class="restau_title">La palette du goût</h1>
-                    <div class="like">
-                        <img class="like_empty" src="../assets/img/icon/empty_heart.svg" alt="icone coeur vide">
-                        <img class="like_full" src="../assets/img/icon/full_heart.svg" alt="icone coeur plein">
-                    </div>
-                </div>
-
-                <!-- Entrees -->
-                <div class="menu">
-                    <div class="menu_entree">
-                        <h2 class="menu_title">Entrées</h2>
-                        <article class="menu_card">
+            <!-- Entrees -->
+            <div class="menu">
+                <div class="menu_container">
+                    <h2 class="menu_title">Entrées</h2>
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Fricassée d'escargots</h3>
                             <p class="menu_card_subtitle">Au piment d'Espelette </p>
-                            <span class="menu_card_price">25€</span>
-                        </article>
+                        </div>
+                        <div class="menu_card_price">25€</div>
+                    </article>
 
-                        <article class="menu_card">
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Foie gras de canard mi-cuit</h3>
                             <p class="menu_card_subtitle">Et ses copeaux de truffe noire</p>
-                            <span class="menu_card_price">35€</span>
-                        </article>
+                        </div>
+                        <div class="menu_card_price">35€</div>
+                    </article>
 
-                        <article class="menu_card">
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Œuf au plat</h3>
                             <p class="menu_card_subtitle">Assaisonné à la truffe sur lit de caviar</p>
-                            <span class="menu_card_price">20€</span>
-                        </article>
-                    </div>
+                        </div>
+                        <div class="menu_card_price">20€</div>
+                    </article>
+                </div>
 
-                    <!-- Plats -->
-                    <div class="menu_plat">
-                        <h2 class="menu_title">Plats</h2>
-                        <article class="menu_card">
+                <!-- Plats -->
+                <div class="menu_container">
+                    <h2 class="menu_title">Plats</h2>
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Filet de bœuf aux herbes</h3>
                             <p class="menu_card_subtitle">Accompagné de sa ribambelle de légumes</p>
-                            <span class="menu_card_price">40€</span>
-                        </article>
+                        </div>
+                        <div class="menu_card_price">40€</div>
+                    </article>
 
-                        <article class="menu_card">
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Parmentier de queue de bœuf</h3>
                             <p class="menu_card_subtitle">À la truffe noire sur sa purée de panais</p>
-                            <span class="menu_card_price">35€</span>
-                        </article>
+                        </div>
+                        <div class="menu_card_price">35€</div>
+                    </article>
 
-                        <article class="menu_card">
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Filet de turbot</h3>
                             <p class="menu_card_subtitle">Aux agrumes</p>
-                            <span class="menu_card_price">44€</span>
-                        </article>
-                    </div>
-                    <!-- Desserts -->
-                    <div class="menu_dessert">
-                        <h2 class="menu_title">Desserts</h2>
-                        <article class="menu_card">
+                        </div>
+                        <div class="menu_card_price">44€</div>
+                    </article>
+                </div>
+                <!-- Desserts -->
+                <div class="menu_container">
+                    <h2 class="menu_title">Desserts</h2>
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Paris-Brest</h3>
                             <p class="menu_card_subtitle">Revisité</p>
-                            <span class="menu_card_price">18€</span>
-                        </article>
+                        </div>
+                        <div class="menu_card_price">18€</div>
+                    </article>
 
-                        <article class="menu_card">
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Macaron au chocolat d'exception </h3>
                             <p class="menu_card_subtitle">Et glace à la vanille de Madagascar</p>
-                            <span class="menu_card_price">22€</span>
-                        </article>
+                        </div>
+                        <div class="menu_card_price">22€</div>
+                    </article>
 
-                        <article class="menu_card">
+                    <article class="menu_card">
+                        <div class="menu_card_txt">
                             <h3 class="menu_card_title">Mousse au chocolat </h3>
                             <p class="menu_card_subtitle">Au piment d'Espelette et à la truffe noire</p>
-                            <span class="menu_card_price">23€</span>
-                        </article>
-
-                    </div>
+                        </div>
+                        <div class="menu_card_price">23€</div>
+                    </article>
 
                 </div>
                 <a class="menu btn" href="#">Commander</a>
-
             </div>
+
         </section>
     </main>
 
