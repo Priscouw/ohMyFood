@@ -304,7 +304,8 @@
   width: 40px;
   bottom: 10px;
 }
-.menu_container .menu_card {
+
+.menu_card {
   background-color: white;
   -webkit-box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
@@ -314,21 +315,77 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  padding: 0.8rem;
   border-radius: 1rem;
   margin-bottom: 0.7rem;
 }
-.menu_container .menu_card_title {
+.menu_card_txt {
+  padding: 0.8rem;
+  overflow: hidden;
+}
+.menu_card_title {
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu_container .menu_card_subtitle {
+.menu_card_subtitle {
   font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.menu_container .menu_card_price {
+.menu_card:hover .check_animation {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+.menu_card:hover .price {
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+}
+
+.menu_card_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.menu_card_price .price {
+  padding-bottom: 0.8rem;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
+}
+.menu_card_price .check_animation {
+  width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: #99E2D0;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transform-origin: right;
+          transform-origin: right;
+  -webkit-transition: -webkit-transform 250ms ease-out;
+  transition: -webkit-transform 250ms ease-out;
+  transition: transform 250ms ease-out;
+  transition: transform 250ms ease-out, -webkit-transform 250ms ease-out;
 }
 
 .menu.btn {

@@ -1,8 +1,12 @@
+// restaurant image
+
 .restau_img img {
     width: 100%;
     height: 275px;
     object-fit: cover;
 }
+
+// section restau
 
 .restau {
 
@@ -39,6 +43,7 @@
     }
 }
 
+
 .menu {
     max-width: 90%;
     margin: 0 auto;
@@ -49,6 +54,7 @@
     }
 }
 
+// container entrée plat dessert
 .menu_container {
     margin: 2rem 0;
 
@@ -69,29 +75,71 @@
             bottom: 10px;
         }
     }
+}
 
+// carte des plats
+.menu_card {
+    background-color: white;
+    box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+    margin-bottom: 0.7rem;
 
-    .menu_card {
-        background-color: white;
-        box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+    &_txt {
         padding: 0.8rem;
-        border-radius: 1rem;
-        margin-bottom: 0.7rem;
+        overflow: hidden;
+    }
 
-        &_title {
-            font-weight: 500;
-        }
+    &_title {
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 
-        &_subtitle {
-            font-size: 0.9rem;
-        }
+    &_subtitle {
+        font-size: 0.9rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
 
-        &_price {
-            font-weight: 700;
-        }
+    // La barre check est poussé de la droite vers la gauche lorsqu'on fait un hover sur l'article 
+    // Le prix est placé à droite et se déplace à gauche quand on fait hover
+
+    &:hover .check_animation {
+        transform: scaleX(1);
+    }
+
+    &:hover .price {
+        transform: translateX(-10px);
+    }
+}
+
+.menu_card_price {
+    display: flex;
+
+    .price {
+        padding-bottom: 0.8rem;
+        font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        transform: translateX(50px);
+        transition: transform 250ms ease-out;
+    }
+
+    .check_animation {
+        width: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        background-color: $third-color;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 250ms ease-out;
     }
 }
 
