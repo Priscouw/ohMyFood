@@ -9,16 +9,15 @@
 // section restau
 
 .restau {
-    position: absolute;
-    width: 100%;
-    top: 230px;
-    height: 1200px;
+    position: relative;
+    top: -60px;
+    height: 1070px;
     padding: 2rem 0;
     background-color: $bg-main-color;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
 
-    @media screen and (min-width:1440px) {
+    @media screen and (min-width:1024px) {
         max-width: 1080px;
         margin: 0 auto;
     }
