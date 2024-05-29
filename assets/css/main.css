@@ -233,7 +233,7 @@
   bottom: 17px;
 }
 
-.restau_img img {
+.restau_banner img {
   width: 100%;
   height: 275px;
   -o-object-fit: cover;
@@ -241,6 +241,10 @@
 }
 
 .restau {
+  position: absolute;
+  width: 100%;
+  top: 230px;
+  height: 1200px;
   padding: 2rem 0;
   background-color: #F6F6F6;
   border-top-left-radius: 3rem;
@@ -439,7 +443,7 @@
 }
 @media screen and (min-width: 1024px) {
   .footer {
-    height: 6.25rem;
+    height: 130px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
@@ -448,7 +452,7 @@
         -ms-flex-align: end;
             align-items: flex-end;
     gap: 5rem;
-    padding: 0 4rem 1.5rem;
+    padding-right: 4rem;
   }
 }
 .footer_title {
@@ -474,6 +478,11 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.footer_menu {
+  position: relative;
+  top: 1020px;
 }
 
 .nav_item {
@@ -559,6 +568,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+}
+
+main {
+  position: relative;
 }
 
 a {

@@ -1,6 +1,6 @@
 // restaurant image
 
-.restau_img img {
+.restau_banner img {
     width: 100%;
     height: 275px;
     object-fit: cover;
@@ -9,7 +9,10 @@
 // section restau
 
 .restau {
-
+    position: absolute;
+    width: 100%;
+    top: 230px;
+    height: 1200px;
     padding: 2rem 0;
     background-color: $bg-main-color;
     border-top-left-radius: 3rem;
