@@ -1,3 +1,7 @@
+.main-menu {
+    margin-bottom: -60px;
+}
+
 // restaurant image
 
 .restau_banner img {
@@ -11,7 +15,6 @@
 .restau {
     position: relative;
     top: -60px;
-    height: 1070px;
     padding: 2rem 0;
     background-color: $bg-main-color;
     border-top-left-radius: 3rem;
