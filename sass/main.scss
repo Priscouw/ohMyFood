@@ -16,6 +16,21 @@ sans-serif;
     font-size: 1rem;
 }
 
+@mixin link-no-deco {
+    text-decoration: none;
+    color: inherit;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin center-container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 // imports
 
 @import './_pages/index';
@@ -33,13 +48,6 @@ sans-serif;
     box-sizing: border-box;
     font-family: $font-family-text;
 }
-
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 
 h2 {
     font-size: 1.5rem;

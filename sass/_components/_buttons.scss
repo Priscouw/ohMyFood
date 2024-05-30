@@ -2,6 +2,7 @@
 
 .btn {
   @include weight-size-txt;
+  @include link-no-deco;
   display: block;
   position: relative;
   padding: 1rem 1.5rem;

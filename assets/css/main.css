@@ -180,6 +180,10 @@
     gap: 3rem;
   }
 }
+.restaurant_container a {
+  text-decoration: none;
+  color: inherit;
+}
 @media screen and (min-width: 768px) {
   .restaurant_container a {
     width: 45%;
@@ -410,6 +414,8 @@
           box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .header a {
+  text-decoration: none;
+  color: inherit;
   position: absolute;
   top: 35%;
   left: 25px;
@@ -428,9 +434,6 @@
 }
 
 .footer {
-  background-color: #353535;
-  color: white;
-  padding: 1.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -438,6 +441,9 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #353535;
+  color: white;
+  padding: 1.5rem;
   gap: 1rem;
 }
 @media screen and (min-width: 1024px) {
@@ -485,19 +491,23 @@
   top: 1335px;
 }
 
-.nav_item {
+.nav_item, .nav_item--thin {
   font-weight: 500;
   font-size: 1rem;
 }
 @media screen and (min-width: 1024px) {
-  .nav_item:nth-child(2) {
+  .nav_item:nth-child(2), .nav_item--thin:nth-child(2) {
     margin-right: 1.5rem;
   }
 }
 .nav_item--thin {
   font-weight: 400;
 }
-.nav_item i {
+.nav_item a, .nav_item--thin a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav_item i, .nav_item--thin i {
   width: 0.68rem;
   margin-right: 0.9rem;
 }
@@ -505,6 +515,8 @@
 .btn {
   font-weight: 500;
   font-size: 1rem;
+  text-decoration: none;
+  color: inherit;
   display: block;
   position: relative;
   padding: 1rem 1.5rem;
@@ -568,11 +580,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 h2 {

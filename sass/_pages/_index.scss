@@ -19,8 +19,7 @@
 // heroheader presentation
 
 .heroheader_content {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     gap: 1rem;
     padding: 2rem 1rem;
@@ -31,7 +30,6 @@
     @media screen and (min-width:768px) {
         box-shadow: none;
         gap: 1.5rem;
-
     }
 }
 
@@ -51,12 +49,10 @@
     font-size: 1.12rem;
 }
 
-
 // section fonctionnement
 
 .fonctionnement {
-    max-width: 90%;
-    margin: 0 auto;
+    @include center-container;
     padding: 3rem 0;
 
     @media screen and (min-width:1440px) {
@@ -64,8 +60,7 @@
     }
 
     &_step_container {
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 1.5rem;
 
         @media screen and (min-width:1024px) {
@@ -97,7 +92,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
         color: white;
         background: $main-color;
         width: 1.5rem;
@@ -127,9 +121,7 @@
 }
 
 .restaurant {
-
-    max-width: 90%;
-    margin: 0 auto;
+    @include center-container;
     padding: 3rem 0;
 
     @media screen and (min-width:1440px) {
@@ -137,9 +129,7 @@
     }
 
     &_container {
-
-        display: flex;
-        flex-direction: column;
+        @include flex-column;
         gap: 1.5rem;
 
         @media screen and (min-width:768px) {
@@ -150,6 +140,8 @@
         }
 
         a {
+            @include link-no-deco;
+
             @media screen and (min-width:768px) {
                 width: 45%;
             }
