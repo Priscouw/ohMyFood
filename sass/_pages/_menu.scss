@@ -85,13 +85,13 @@
     background-color: white;
     box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
     display: flex;
-    justify-content: space-between;
     border-radius: 1rem;
     margin-bottom: 0.7rem;
 
     &_txt {
         padding: 0.8rem;
         overflow: hidden;
+        flex: 1;
     }
 
     &_title {
@@ -108,15 +108,10 @@
         white-space: nowrap;
     }
 
-    // La barre check est poussé de la droite vers la gauche lorsqu'on fait un hover sur l'article 
-    // Le prix est placé à droite et se déplace à gauche quand on fait hover
 
     &:hover .check_animation {
-        transform: scaleX(1);
-    }
-
-    &:hover .price {
-        transform: translateX(-10px);
+        width: 60px;
+        transform: translateX(1);
     }
 }
 
@@ -128,21 +123,23 @@
         font-weight: 700;
         display: flex;
         align-items: flex-end;
-        transform: translateX(50px);
-        transition: transform 250ms ease-out;
+        padding-right: 1rem;
     }
 
+    // La barre check est poussé de la droite vers la gauche lorsqu'on fait un hover sur l'article en passant de 0px à 60px.
+
     .check_animation {
-        width: 60px;
+        width: 0;
         display: flex;
         justify-content: center;
         align-items: center;
         border-top-right-radius: 1rem;
         border-bottom-right-radius: 1rem;
         background-color: $third-color;
-        transform: scaleX(0);
+        transform: translateX(0);
         transform-origin: right;
-        transition: transform 250ms ease-out;
+        transition: all 250ms ease-out;
+        overflow: hidden;
     }
 }
 
