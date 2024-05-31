@@ -1,17 +1,17 @@
-// Le coeur plein est placé au dessus du coeur vide mais n'est pas visible par défault , il apparait au hover du coeur vide. Le coeur vide visible par default devient invisible 
+// Le coeur plein est placé en dessous du coeur vide mais n'est pas visible par défault , il apparait au hover du coeur vide. Le coeur vide visible par default devient invisible 
 
 .like {
     position: relative;
 
     &_empty,
     &_full {
-        width: 21px;
-        height: 21px;
+        font-size: 1.4rem;
         position: absolute;
-        transition: opacity 250ms ease-in-out;
+        transition: opacity 250ms linear;
     }
 
     &_empty {
+        background: inherit;
         opacity: 1;
         z-index: 1;
 
@@ -25,6 +25,9 @@
     }
 
     &_full {
+        background: linear-gradient($main-color, $second-color);
+        background-clip: text;
+        color: transparent;
         opacity: 0;
     }
 }

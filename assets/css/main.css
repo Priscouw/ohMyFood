@@ -182,7 +182,7 @@
   font-size: 1.06rem;
 }
 .restaurant_card .like {
-  right: 40px;
+  right: 50px;
   bottom: 17px;
 }
 
@@ -227,7 +227,7 @@
   font-size: 1.5rem;
 }
 .restau_txt .like {
-  top: 5px;
+  top: 7px;
 }
 
 .menu {
@@ -436,12 +436,12 @@
   position: relative;
 }
 .like_empty, .like_full {
-  width: 21px;
-  height: 21px;
+  font-size: 1.4rem;
   position: absolute;
-  transition: opacity 250ms ease-in-out;
+  transition: opacity 250ms linear;
 }
 .like_empty {
+  background: inherit;
   opacity: 1;
   z-index: 1;
 }
@@ -452,6 +452,9 @@
   opacity: 1;
 }
 .like_full {
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  color: transparent;
   opacity: 0;
 }
 
