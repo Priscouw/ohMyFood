@@ -1,0 +1,73 @@
+// Le loader comprend un background qui prend toute la surface de la page avec une transparence flou, le logo et une barre de chargement au centre de la page. 
+
+// L'animation commence quand la barre de chargement est terminé
+.loader {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    animation: back 1400ms both ease-in-out;
+    animation-delay: 3150ms;
+    z-index: -99;
+}
+
+/*Conteneur de la barre de progression */
+.progress {
+    border: 1px solid black;
+    width: 300px;
+    border-radius: 2rem;
+    overflow: hidden;
+    height: 30px;
+}
+
+/* barre de progression se lance à 0.15s et dure 3secondes */
+.progress_bar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, $main-color , $second-color);
+    transform-origin: left;
+    animation: load 3000ms both ease-in-out;
+    animation-delay: 150ms;
+}
+
+/* Keyframes */
+
+@keyframes back {
+
+    0% {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    99% {
+        opacity: 0;
+        z-index: 100;
+        /* Maintenir le z-index jusqu'à la fin de l'animation */
+    }
+
+    100% {
+        opacity: 0;
+        z-index: -99;
+    }
+
+}
+
+@keyframes load {
+    0% {
+        transform: scaleX(0);
+        z-index: 3;
+    }
+
+    100% {
+        transform: scaleX(1);
+    }
+
+}
