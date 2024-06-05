@@ -19,7 +19,7 @@
     z-index: -99;
 
     & img {
-        width: 35%;
+        width: 260px;
     }
 }
 
@@ -48,7 +48,6 @@
 @keyframes back {
 
     0% {
-        opacity: 1;
         z-index: 100;
     }
 
@@ -68,7 +67,7 @@
 @keyframes load {
     0% {
         transform: scaleX(0);
-        z-index: 3;
+        z-index: 100;
     }
 
     100% {
