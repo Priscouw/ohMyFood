@@ -17,7 +17,7 @@
   z-index: -99;
 }
 .loader img {
-  width: 35%;
+  width: 260px;
 }
 
 /*Conteneur de la barre de progression */
@@ -41,7 +41,6 @@
 /* Keyframes */
 @keyframes back {
   0% {
-    opacity: 1;
     z-index: 100;
   }
   99% {
@@ -57,7 +56,7 @@
 @keyframes load {
   0% {
     transform: scaleX(0);
-    z-index: 3;
+    z-index: 100;
   }
   100% {
     transform: scaleX(1);
@@ -260,6 +259,11 @@
   height: 275px;
   object-fit: cover;
 }
+@media screen and (min-width: 1024px) {
+  .restau_banner img {
+    height: 383px;
+  }
+}
 
 .restau {
   position: relative;
@@ -307,6 +311,16 @@
 
 .menu_container {
   margin: 2rem 0;
+  animation: menu 1200ms ease-in-out;
+}
+.menu_container--1 {
+  animation-delay: 150ms;
+}
+.menu_container--2 {
+  animation-delay: 300ms;
+}
+.menu_container--3 {
+  animation-delay: 450ms;
 }
 .menu_container .menu_title {
   font-size: 1rem;
@@ -324,12 +338,25 @@
   bottom: 10px;
 }
 
+@keyframes menu {
+  0% {
+    transform: translateX(700px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
 .menu_card {
   background-color: white;
   box-shadow: 0px 4.01px 15.04px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   border-radius: 1rem;
   margin-bottom: 0.7rem;
+  overflow: hidden;
 }
 .menu_card_txt {
   padding: 0.8rem;
@@ -347,6 +374,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  line-height: 1.5rem;
 }
 .menu_card:hover .check_animation {
   width: 60px;
@@ -374,7 +402,6 @@
   transform: translateX(0);
   transform-origin: right;
   transition: all 300ms ease-out;
-  overflow: hidden;
 }
 
 .menu.btn {

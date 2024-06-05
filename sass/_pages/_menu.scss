@@ -8,6 +8,10 @@
     width: 100%;
     height: 275px;
     object-fit: cover;
+
+    @media screen and (min-width:1024px) {
+        height: 383px;
+    }
 }
 
 // section restau
@@ -61,6 +65,13 @@
 // container entrée plat dessert
 .menu_container {
     margin: 2rem 0;
+    animation: menu 1200ms ease-in-out;
+
+    @for $i from 1 through 3 {
+        &--#{$i} {
+            animation-delay: 150ms * $i;
+        }
+    }
 
     .menu_title {
         font-size: 1rem;
@@ -80,6 +91,24 @@
     }
 }
 
+// Keyframe slide menu , arrive de la droite en décalé suivant la catégorie de plat 
+
+@keyframes menu {
+    0% {
+        transform: translateX(700px);
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
 // carte des plats
 .menu_card {
     background-color: white;
@@ -87,6 +116,7 @@
     display: flex;
     border-radius: 1rem;
     margin-bottom: 0.7rem;
+    overflow: hidden;
 
     &_txt {
         padding: 0.8rem;
@@ -106,6 +136,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        line-height: 1.5rem;
     }
 
 
@@ -139,7 +170,6 @@
         transform: translateX(0);
         transform-origin: right;
         transition: all 300ms ease-out;
-        overflow: hidden;
     }
 }
 
