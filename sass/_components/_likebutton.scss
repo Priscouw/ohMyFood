@@ -5,6 +5,8 @@
 
     &_empty,
     &_full {
+        width: 24px;
+        text-align: center;
         font-size: 1.4rem;
         position: absolute;
         transition: opacity 250ms cubic-bezier(0.14, -0.09, 0.87, 0.4);
