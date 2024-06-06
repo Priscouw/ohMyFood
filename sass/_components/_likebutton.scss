@@ -20,7 +20,7 @@
         &:hover {
             opacity: 0;
 
-            &:hover+.like_full {
+            &+.like_full {
                 opacity: 1;
             }
         }

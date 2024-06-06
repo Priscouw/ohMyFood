@@ -542,7 +542,7 @@
 .like_empty:hover {
   opacity: 0;
 }
-.like_empty:hover:hover + .like_full {
+.like_empty:hover + .like_full {
   opacity: 1;
 }
 .like_full {
