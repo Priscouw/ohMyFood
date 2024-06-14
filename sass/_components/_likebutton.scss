@@ -1,7 +1,8 @@
 // Le coeur plein est placé en dessous du coeur vide mais n'est pas visible par défault , il apparait au hover du coeur vide. Le coeur vide visible par default devient invisible 
 
 .like {
-    position: relative;
+    display: flex;
+    align-items: center;
 
     &_empty,
     &_full {

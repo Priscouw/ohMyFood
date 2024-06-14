@@ -246,8 +246,7 @@
   font-size: 1.06rem;
 }
 .restaurant_card .like {
-  right: 50px;
-  bottom: 17px;
+  padding-right: 50px;
 }
 
 .main-menu {
@@ -281,13 +280,14 @@
 }
 .restau_txt {
   display: flex;
-  gap: 2rem;
   margin-left: 5%;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .restau_txt {
     margin-left: 0;
     justify-content: center;
+    gap: 2rem;
   }
 }
 .restau_txt-title {
@@ -296,7 +296,12 @@
   font-size: 1.5rem;
 }
 .restau_txt .like {
-  top: 7px;
+  padding-right: 60px;
+}
+@media screen and (min-width: 768px) {
+  .restau_txt .like {
+    padding-right: 0;
+  }
 }
 
 .menu {
@@ -523,7 +528,8 @@
 }
 
 .like {
-  position: relative;
+  display: flex;
+  align-items: center;
 }
 .like_empty, .like_full {
   width: 24px;
